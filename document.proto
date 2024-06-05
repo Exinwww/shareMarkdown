@@ -1,0 +1,53 @@
+syntax = "proto3";
+// 读
+message ReadRequest {
+    string document_id = 1;
+}
+
+message ReadResponse {
+    string content = 1;
+    string version = 2;
+}
+// 写
+message WriteRequest {
+    string document_id = 1;
+    string content = 2;
+    string version = 3;
+}
+
+message WriteResponse {
+    bool success = 1;
+    string message = 2;
+}
+// 创建
+message CreateRequest {
+    string document_id = 1;
+}
+
+message CreateResponse {
+    bool success = 1;
+    string message = 2;
+}
+// 删除
+message DeleteRequest {
+    string document_id = 1;
+}
+
+message DeleteResponse {
+    bool success = 1;
+    string message = 2;
+}
+// Service定义
+service DocumentService {
+    rpc ReadDocument(ReadRequest) returns (ReadResponse);
+    rpc WriteDocument(WriteRequest) returns (WriteResponse);
+    rpc CreateDocument(CreateRequest) returns (CreateResponse);
+    rpc DeleteDocument(DeleteRequest) returns (DeleteResponse);
+}
+
+/* 
+定义了gRPC服务接口和消息类型
+编译：
+python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. document.proto
+
+*/
