@@ -17,7 +17,7 @@ ZOOKEEPER_HOSTS = 'localhost:2181'
 
 # 配置日志记录
 logging.basicConfig(
-    level=logging.DEBUG,  # 设置日志级别
+    level=logging.INFO,  # 设置日志级别
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # 日志格式
     handlers=[
         logging.FileHandler("logs/app.log"),  # 将日志输出到文件
