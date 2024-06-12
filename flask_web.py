@@ -6,6 +6,9 @@ import document_pb2_grpc
 import eventlet
 import logging
 import threading
+import queue
+import multiprocessing
+import asyncio
 eventlet.monkey_patch()  # 进行猴子补丁
 
 app = Flask(__name__)
@@ -28,20 +31,10 @@ def get_document_stub():
     stub = document_pb2_grpc.DocumentServiceStub(channel)
     return stub
 
-# 获取用户标识的函数
-def get_user_identity():
-    # e.g. curl -X GET -H "Authorization: Bearer your_token_here" http://localhost:5000/api/documents/testdoc1
-    # 在这里你可以解析请求中的认证信息，比如令牌、用户名密码等
-    # 这里以获取Authorization头部中的认证信息为例，你可以根据你的需求进行调整
-    auth_header = request.headers.get('Authorization')
-    if auth_header:
-        # 在这里解析认证信息，比如从认证头部中提取出令牌或用户名密码
-        # 假设认证信息格式为：Bearer <token>，或者 Basic <username:password>
-        # 这里简单示范获取令牌
-        _, token = auth_header.split(' ')
-        return token
-    return None
-
+async def get_async_document_stub():
+    channel = grpc.aio.insecure_channel('localhost:50051')
+    stub = document_pb2_grpc.DocumentServiceStub(channel)
+    return stub
 
 # 客户端连接与文档更新广播
 def broadcast_message(document_id, message):
@@ -81,7 +74,7 @@ def get_document(data):
         'version': response.version
     })
     # return jsonify(type='get', content=response.content, version = response.version)
-@socketio.on('save')
+# @socketio.on('save')
 # def save_document(data):
 #     did = data['document_id']
 #     content = data['content']
@@ -96,40 +89,75 @@ def get_document(data):
 #     # })
 #     if response.success:
 #         broadcast_message(did, f"Document {did} has been updated.") #
+@socketio.on('save')
 def save_document(data):
-    def handle_save(data):
-        did = data['document_id']
-        content = data['content']
-        version = data['version']
-        logging.info(f"Received save request for document {did} with version {version}")
+    save_queue.put(data)
+    logger.info('main thread finished save_document')
+    socketio.emit('save', {
+        'success':'True',
+        'message':'nihao'
+    })
 
-        stub = get_document_stub()
+# async def async_write_document(stub, document_id, content, version):
+#     response = await stub.WriteDocument(document_pb2.WriteRequest(
+#         document_id=str(document_id), content=content, version=version
+#     ))
+#     return response
+
+# async def save_document_worker(save_queue):
+#     logger.info('save_document_worker START')
+#     while True:
+#         logger.info('save_document_worker Running')
+#         data = save_queue.get()
+#         if data is None:  # 用于停止线程的信号
+#             break
+#         logger.info(f"Processing save for document_id {data['document_id']}")
+#         try:
+#             did = data['document_id']
+#             content = data['content']
+#             version = data['version']
+#             stub = await get_async_document_stub()
+#             response = await async_write_document(stub, did, content, version)
+#             if response.success:
+#                 broadcast_message(did, f"Document {did} has been updated.")
+#             # 通知客户端保存结果
+#             socketio.emit('save_response', {
+#                 'success': response.success,
+#                 'message': response.message
+#             }, room=data['sid'])  # 使用session id来指定返回给哪个客户端
+#         except Exception as e:
+#             logger.error(f"Error processing save for document_id {data['document_id']}: {e}")
+
+########## 多进程
+def write_document(stub, document_id, content, version):
+    response = stub.WriteDocument(document_pb2.WriteRequest(
+        document_id=str(document_id), content=content, version=version
+    ))
+    return response
+def save_document_worker(save_queue):
+    logger.info('save_document_worker START')
+    while True:
+        logger.info('save_document_worker Running')
+        data = save_queue.get()
+        if data is None:  # 用于停止线程的信号
+            break
+        logger.info(f"Processing save for document_id {data['document_id']}")
         try:
-            response = stub.WriteDocument(document_pb2.WriteRequest(
-                document_id = str(did), content =  content, version = version
-            ))
-            logging.info(f"RPC response: success={response.success}, message={response.message}")
-        except Exception as e:
-            logging.error(f"Error during RPC call: {str(e)}")
-            socketio.emit('save', {
-                'success': False,
-                'message': str(e)
-            })
-            return
-
-        if response.success:
-            logging.info(f"Broadcasting message for document {did}")
-            broadcast_message(did, f"Document {did} has been updated.")
-        else:
-            logging.info(f"Failed to save document {did}: {response.message}")
-            socketio.emit('save', {
+            did = data['document_id']
+            content = data['content']
+            version = data['version']
+            stub = get_document_stub()
+            response = write_document(stub, did, content, version)
+            if response.success:
+                broadcast_message(did, f"Document {did} has been updated.")
+            # 通知客户端保存结果
+            socketio.emit('save_response', {
                 'success': response.success,
                 'message': response.message
-            })
+            }, room=did)  # 使用session id来指定返回给哪个客户端
+        except Exception as e:
+            logger.error(f"Error processing save for document_id {data['document_id']}: {e}")
 
-    eventlet.spawn(handle_save, data)
-    
-    
 @socketio.on('create')
 def create_document(data):
     did = data['document_id']
@@ -166,5 +194,18 @@ def get_document_list():
     })
 
 if __name__ == '__main__':
+    # save_queue = queue.Queue()
+    # save_thread = threading.Thread(target=save_document_worker, args=(save_queue,))
+    # save_thread.start()
+    # asyncio.run(save_document_worker(save_queue))
+
+    save_queue =  multiprocessing.Queue()
+    save_thread = multiprocessing.Process(target=save_document_worker, args=(save_queue,))
+    save_thread.start()
+    try:
+        socketio.run(app, debug=True, host='0.0.0.0', port=5678)
+    finally:
+        save_queue.put(None) # 发送停止信号
+        save_thread.join()
     # app.run(debug=True, host='localhost', port = 5000)
-    socketio.run(app, debug=True, host='0.0.0.0', port=5678)
+    # socketio.run(app, debug=True, host='0.0.0.0', port=5678)

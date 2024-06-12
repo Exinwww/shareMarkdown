@@ -1787,3 +1787,417 @@ nihao!!!wow.yeahhhhhhhh111', version = 'v12' WHERE document_id = '2333'
 2024-06-12 04:43:04,498 - kazoo.client - WARNING - Connection dropped: socket connection broken
 2024-06-12 04:43:04,498 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
 2024-06-12 04:43:04,499 - kazoo.client - WARNING - Connection dropped: socket connection broken
+2024-06-12 12:12:46,221 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:12:46,286 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:12:46,301 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:12:46,305 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:12:46,306 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:12:47,908 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-12 12:12:47,915 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:12:47,918 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:12:47,920 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:12:47,920 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:12:48,801 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-12 12:12:48,811 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:12:48,813 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:12:48,814 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:12:48,814 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:12:50,009 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-12 12:12:50,052 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:12:50,054 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:12:50,055 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:12:50,055 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:18,929 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:13:18,937 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:18,939 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:18,940 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:18,940 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:20,364 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:13:20,371 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:20,374 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:20,375 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:20,375 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:21,127 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-12 12:13:21,134 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:21,135 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:21,136 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:21,137 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:21,879 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:13:21,885 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:21,887 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:21,888 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:21,888 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:22,446 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:13:22,455 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:22,457 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:22,458 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:22,458 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:23,062 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:13:23,069 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:23,072 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:23,073 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:23,073 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:23,674 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:13:23,679 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:23,681 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:23,682 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:23,682 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:24,292 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-12 12:13:24,298 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:24,300 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:24,301 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:24,301 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:24,877 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-12 12:13:24,883 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:24,885 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:24,886 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:24,886 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:25,733 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:13:25,741 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:25,743 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:25,744 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:25,744 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:26,404 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:13:26,411 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:26,413 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:26,414 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:26,414 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:27,027 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:13:27,033 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:27,035 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:27,036 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:27,036 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:27,614 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:13:27,622 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:27,624 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:27,624 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:27,625 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:28,150 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:13:28,155 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:28,157 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:28,157 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:28,158 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:36,054 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-12 12:13:36,060 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:36,062 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:36,063 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:36,063 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:13:40,288 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:13:40,298 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:13:40,300 - thrift.transport.TSocket - INFO - Could not connect to ('::1', 10000, 0, 0)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:40,301 - thrift.transport.TSocket - INFO - Could not connect to ('127.0.0.1', 10000)
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/thrift/transport/TSocket.py", line 140, in open
+    handle.connect(sockaddr)
+ConnectionRefusedError: [Errno 111] Connection refused
+2024-06-12 12:13:40,301 - thrift.transport.TSocket - ERROR - Could not connect to any of [('::1', 10000, 0, 0), ('127.0.0.1', 10000)]
+2024-06-12 12:14:02,734 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 12:14:02,741 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 12:14:02,987 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:14:03,896 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-12 12:14:04,488 - __main__ - INFO - TABLE: documents is exit.
+2024-06-12 12:14:55,246 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:14:55,312 - __main__ - INFO - Request to List Documents
+2024-06-12 12:14:55,312 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 12:14:59,045 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:14:59,138 - __main__ - INFO - Request to ReadDocument: 123
+2024-06-12 12:14:59,138 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '123'
+2024-06-12 12:14:59,775 - __main__ - INFO - Document Found
+2024-06-12 12:15:04,906 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:15:05,002 - __main__ - INFO - Request to WriteDocument: 123
+2024-06-12 12:15:05,002 - pyhive.hive - INFO - SELECT version FROM documents WHERE document_id = '123'
+2024-06-12 12:15:05,311 - pyhive.hive - INFO - UPDATE documents SET content = 'nihao222233', version = 'v14' WHERE document_id = '123'
+2024-06-12 12:16:04,829 - __main__ - INFO - WriteDocument OK. Has Been commit.
+2024-06-12 12:19:53,871 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:19:54,016 - __main__ - INFO - Request to List Documents
+2024-06-12 12:19:54,016 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 12:20:02,973 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:20:03,143 - __main__ - INFO - Request to ReadDocument: 123
+2024-06-12 12:20:03,143 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '123'
+2024-06-12 12:20:03,436 - __main__ - INFO - Document Found
+2024-06-12 12:20:07,204 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:20:07,394 - __main__ - INFO - Request to WriteDocument: 123
+2024-06-12 12:20:07,395 - pyhive.hive - INFO - SELECT version FROM documents WHERE document_id = '123'
+2024-06-12 12:20:07,722 - pyhive.hive - INFO - UPDATE documents SET content = 'nihao222233', version = 'v15' WHERE document_id = '123'
+2024-06-12 12:20:54,801 - __main__ - INFO - WriteDocument OK. Has Been commit.
+2024-06-12 12:20:54,918 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:20:55,148 - __main__ - INFO - Request to List Documents
+2024-06-12 12:20:55,148 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 12:20:55,574 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:20:55,755 - __main__ - INFO - Request to ReadDocument: 2333
+2024-06-12 12:20:55,755 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '2333'
+2024-06-12 12:20:56,050 - __main__ - INFO - Document Found
+2024-06-12 12:23:16,422 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:23:16,659 - __main__ - INFO - Request to List Documents
+2024-06-12 12:23:16,659 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 12:23:23,258 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:23:23,432 - __main__ - INFO - Request to ReadDocument: 123
+2024-06-12 12:23:23,433 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '123'
+2024-06-12 12:23:23,661 - __main__ - INFO - Document Found
+2024-06-12 12:23:26,136 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:23:26,242 - __main__ - INFO - Request to WriteDocument: 123
+2024-06-12 12:23:26,242 - pyhive.hive - INFO - SELECT version FROM documents WHERE document_id = '123'
+2024-06-12 12:23:26,473 - pyhive.hive - INFO - UPDATE documents SET content = 'nihao222233', version = 'v16' WHERE document_id = '123'
+2024-06-12 12:24:09,322 - __main__ - INFO - WriteDocument OK. Has Been commit.
+2024-06-12 12:24:09,440 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:24:09,604 - __main__ - INFO - Request to ReadDocument: 2333
+2024-06-12 12:24:09,604 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '2333'
+2024-06-12 12:24:09,862 - __main__ - INFO - Document Found
+2024-06-12 12:24:10,016 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:24:10,178 - __main__ - INFO - Request to ReadDocument: 123
+2024-06-12 12:24:10,178 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '123'
+2024-06-12 12:24:10,459 - __main__ - INFO - Document Found
+2024-06-12 12:26:24,411 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:26:24,583 - __main__ - INFO - Request to List Documents
+2024-06-12 12:26:24,583 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 12:26:26,044 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:26:26,254 - __main__ - INFO - Request to ReadDocument: 123
+2024-06-12 12:26:26,254 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '123'
+2024-06-12 12:26:26,511 - __main__ - INFO - Document Found
+2024-06-12 12:26:28,628 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:26:28,730 - __main__ - INFO - Request to WriteDocument: 123
+2024-06-12 12:26:28,730 - pyhive.hive - INFO - SELECT version FROM documents WHERE document_id = '123'
+2024-06-12 12:26:28,964 - pyhive.hive - INFO - UPDATE documents SET content = 'nihao222233', version = 'v17' WHERE document_id = '123'
+2024-06-12 12:27:09,125 - __main__ - INFO - WriteDocument OK. Has Been commit.
+2024-06-12 12:37:54,335 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:37:54,484 - __main__ - INFO - Request to List Documents
+2024-06-12 12:37:54,484 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 12:37:58,605 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:37:58,763 - __main__ - INFO - Request to List Documents
+2024-06-12 12:37:58,763 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 12:38:07,704 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:38:07,814 - __main__ - INFO - Request to ReadDocument: 123
+2024-06-12 12:38:07,814 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '123'
+2024-06-12 12:38:07,962 - __main__ - INFO - Document Found
+2024-06-12 12:48:03,281 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:48:03,411 - __main__ - INFO - Request to List Documents
+2024-06-12 12:48:03,411 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 12:48:09,856 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:48:10,063 - __main__ - INFO - Request to ReadDocument: 123
+2024-06-12 12:48:10,063 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '123'
+2024-06-12 12:48:10,273 - __main__ - INFO - Document Found
+2024-06-12 12:51:33,569 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:51:33,681 - __main__ - INFO - Request to List Documents
+2024-06-12 12:51:33,681 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 12:51:38,513 - pyhive.hive - INFO - USE `default`
+2024-06-12 12:51:38,796 - __main__ - INFO - Request to ReadDocument: 123
+2024-06-12 12:51:38,796 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '123'
+2024-06-12 12:51:38,981 - __main__ - INFO - Document Found
+2024-06-12 13:22:57,433 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-12 13:22:57,483 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-12 13:22:57,844 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:23:05,064 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-12 13:23:05,389 - __main__ - INFO - TABLE: documents is exit.
+2024-06-12 13:23:23,447 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:23:23,671 - __main__ - INFO - Request to List Documents
+2024-06-12 13:23:23,671 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 13:23:26,126 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:23:26,335 - __main__ - INFO - Request to ReadDocument: 123
+2024-06-12 13:23:26,335 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '123'
+2024-06-12 13:23:26,554 - __main__ - INFO - Document Found
+2024-06-12 13:24:12,487 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:24:12,663 - __main__ - INFO - Request to List Documents
+2024-06-12 13:24:12,663 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 13:24:15,227 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:24:15,392 - __main__ - INFO - Request to ReadDocument: 123
+2024-06-12 13:24:15,392 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '123'
+2024-06-12 13:24:15,644 - __main__ - INFO - Document Found
+2024-06-12 13:24:16,578 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:24:16,746 - __main__ - INFO - Request to WriteDocument: 123
+2024-06-12 13:24:16,746 - pyhive.hive - INFO - SELECT version FROM documents WHERE document_id = '123'
+2024-06-12 13:24:17,035 - pyhive.hive - INFO - UPDATE documents SET content = 'nihao222233', version = 'v18' WHERE document_id = '123'
+2024-06-12 13:25:03,472 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:25:03,645 - __main__ - INFO - Request to List Documents
+2024-06-12 13:25:03,645 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 13:25:14,142 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:25:14,493 - __main__ - INFO - Request to List Documents
+2024-06-12 13:25:14,493 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 13:25:25,840 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:25:26,007 - __main__ - INFO - Request to List Documents
+2024-06-12 13:25:26,007 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 13:25:39,470 - __main__ - INFO - WriteDocument OK. Has Been commit.
+2024-06-12 13:26:49,502 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:26:52,598 - __main__ - INFO - Request to List Documents
+2024-06-12 13:26:52,598 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 13:26:55,029 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:26:55,217 - __main__ - INFO - Request to ReadDocument: 123
+2024-06-12 13:26:55,217 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '123'
+2024-06-12 13:26:55,468 - __main__ - INFO - Document Found
+2024-06-12 13:27:02,047 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:27:02,232 - __main__ - INFO - Request to WriteDocument: 123
+2024-06-12 13:27:02,233 - pyhive.hive - INFO - SELECT version FROM documents WHERE document_id = '123'
+2024-06-12 13:27:02,516 - pyhive.hive - INFO - UPDATE documents SET content = 'nihao222233114334', version = 'v19' WHERE document_id = '123'
+2024-06-12 13:27:04,096 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:27:04,319 - __main__ - INFO - Request to List Documents
+2024-06-12 13:27:04,319 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 13:27:07,056 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:27:07,252 - __main__ - INFO - Request to ReadDocument: 123
+2024-06-12 13:27:07,252 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '123'
+2024-06-12 13:27:07,470 - __main__ - INFO - Document Found
+2024-06-12 13:27:09,947 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:27:10,221 - __main__ - INFO - Request to ReadDocument: 2333
+2024-06-12 13:27:10,221 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '2333'
+2024-06-12 13:27:10,470 - __main__ - INFO - Document Found
+2024-06-12 13:27:17,082 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:27:17,297 - __main__ - INFO - Request to List Documents
+2024-06-12 13:27:17,297 - pyhive.hive - INFO - SELECT document_id FROM documents
+2024-06-12 13:27:20,926 - pyhive.hive - INFO - USE `default`
+2024-06-12 13:27:21,129 - __main__ - INFO - Request to ReadDocument: 123
+2024-06-12 13:27:21,129 - pyhive.hive - INFO - SELECT content, version FROM documents WHERE document_id = '123'
+2024-06-12 13:27:21,465 - __main__ - INFO - Document Found

@@ -1,158 +1,56 @@
-2024-06-11 03:44:39,196 - werkzeug - WARNING -  * Debugger is active!
-2024-06-11 03:44:39,197 - werkzeug - INFO -  * Debugger PIN: 984-606-042
-2024-06-11 03:46:49,438 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-11 03:46:49,967 - werkzeug - WARNING -  * Debugger is active!
-2024-06-11 03:46:49,968 - werkzeug - INFO -  * Debugger PIN: 984-606-042
-2024-06-11 03:46:58,063 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-11 03:46:58,592 - werkzeug - WARNING -  * Debugger is active!
-2024-06-11 03:46:58,592 - werkzeug - INFO -  * Debugger PIN: 984-606-042
-2024-06-11 03:47:35,763 - werkzeug - INFO -  * Restarting with stat
-2024-06-11 03:47:36,213 - werkzeug - WARNING -  * Debugger is active!
-2024-06-11 03:47:36,213 - werkzeug - INFO -  * Debugger PIN: 984-606-042
-2024-06-11 03:49:01,492 - __main__ - INFO - broadcast called.
-2024-06-12 02:10:24,438 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:10:25,078 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:10:25,078 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:14:11,457 - __main__ - INFO - broadcast called.
-2024-06-12 02:15:39,556 - __main__ - INFO - broadcast called.
-2024-06-12 02:16:32,396 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 02:16:32,525 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:16:33,173 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:16:33,176 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:25:22,782 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 02:25:22,903 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:26:48,388 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:26:49,054 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:26:49,057 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:27:46,118 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 02:27:46,252 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:27:47,009 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:27:47,010 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:27:55,440 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:27:56,156 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:27:56,157 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:29:11,411 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 02:29:11,556 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:29:12,225 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:29:12,226 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:29:13,266 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 02:29:13,440 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:29:14,222 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:29:14,223 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:30:52,659 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 02:30:52,853 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:30:53,660 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:30:53,660 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:32:29,201 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 02:32:29,360 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:32:30,096 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:32:30,099 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:32:48,728 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:32:49,384 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:32:49,384 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:33:21,562 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:33:22,171 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:33:22,171 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:35:42,290 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:35:42,969 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:35:42,970 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:37:16,367 - __main__ - INFO - broadcast called.
-2024-06-12 02:37:49,912 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 02:37:50,095 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:37:51,423 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:37:51,426 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:41:07,711 - __main__ - INFO - broadcast called.
-2024-06-12 02:44:58,145 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:44:58,869 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:44:58,872 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:46:13,710 - __main__ - INFO - broadcast called.
-2024-06-12 02:49:26,624 - __main__ - INFO - broadcast called.
-2024-06-12 02:50:15,387 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 02:50:15,539 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:50:16,428 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:50:16,442 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:50:38,824 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 02:50:38,989 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:50:39,767 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:50:39,770 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:50:46,822 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:50:47,680 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:50:47,681 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:51:39,946 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 02:51:40,054 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:51:40,786 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:51:40,787 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:53:09,166 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 02:53:09,330 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 02:53:10,175 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 02:53:10,176 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 02:53:30,291 - root - INFO - Received save request for document 123 with version v10
-2024-06-12 02:54:39,767 - root - INFO - RPC response: success=True, message=Document updated
-2024-06-12 02:54:39,767 - root - INFO - Broadcasting message for document 123
-2024-06-12 02:54:39,767 - __main__ - INFO - broadcast called.
-2024-06-12 02:57:06,350 - root - INFO - Received save request for document 123 with version v11
-2024-06-12 02:59:05,490 - root - INFO - RPC response: success=True, message=Document updated
-2024-06-12 02:59:05,507 - root - INFO - Broadcasting message for document 123
-2024-06-12 02:59:05,508 - __main__ - INFO - broadcast called.
-2024-06-12 02:59:31,338 - root - INFO - Received save request for document 123 with version v11
-2024-06-12 02:59:32,999 - root - ERROR - Error during RPC call: <_InactiveRpcError of RPC that terminated with:
-	status = StatusCode.ABORTED
-	details = "version mismatch or document not found"
-	debug_error_string = "UNKNOWN:Error received from peer ipv6:%5B::1%5D:50051 {grpc_message:"version mismatch or document not found", grpc_status:10, created_time:"2024-06-12T02:59:32.998691126+00:00"}"
+2024-06-12 12:47:17,243 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
+2024-06-12 12:47:17,325 - werkzeug - INFO -  * Restarting with stat
+2024-06-12 12:47:53,996 - werkzeug - INFO -  * Restarting with stat
+2024-06-12 12:47:54,379 - werkzeug - WARNING -  * Debugger is active!
+2024-06-12 12:47:54,380 - werkzeug - INFO -  * Debugger PIN: 924-627-618
+2024-06-12 12:48:12,009 - __main__ - INFO - main thread finished save_document
+2024-06-12 12:50:53,149 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
+2024-06-12 12:50:53,228 - werkzeug - INFO -  * Restarting with stat
+2024-06-12 12:50:53,648 - werkzeug - WARNING -  * Debugger is active!
+2024-06-12 12:50:53,649 - werkzeug - INFO -  * Debugger PIN: 924-627-618
+2024-06-12 12:51:00,732 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
+2024-06-12 12:51:00,819 - werkzeug - INFO -  * Restarting with stat
+2024-06-12 12:51:01,266 - werkzeug - WARNING -  * Debugger is active!
+2024-06-12 12:51:01,266 - werkzeug - INFO -  * Debugger PIN: 924-627-618
+2024-06-12 12:51:05,563 - werkzeug - INFO -  * Restarting with stat
+2024-06-12 12:51:05,968 - werkzeug - WARNING -  * Debugger is active!
+2024-06-12 12:51:05,968 - werkzeug - INFO -  * Debugger PIN: 924-627-618
+2024-06-12 12:51:40,400 - __main__ - INFO - main thread finished save_document
+2024-06-12 12:56:26,059 - __main__ - INFO - save_document_worker START
+2024-06-12 12:56:26,059 - __main__ - INFO - save_document_worker Running
+2024-06-12 13:22:49,442 - werkzeug - INFO -  * Restarting with stat
+2024-06-12 13:22:49,444 - __main__ - INFO - save_document_worker START
+2024-06-12 13:22:49,445 - __main__ - INFO - save_document_worker Running
+2024-06-12 13:22:49,956 - werkzeug - WARNING -  * Debugger is active!
+2024-06-12 13:22:49,957 - werkzeug - INFO -  * Debugger PIN: 924-627-618
+2024-06-12 13:22:49,979 - __main__ - INFO - save_document_worker START
+2024-06-12 13:22:49,980 - __main__ - INFO - save_document_worker Running
+2024-06-12 13:23:28,025 - __main__ - INFO - main thread finished save_document
+2024-06-12 13:23:28,026 - __main__ - INFO - Processing save for document_id 123
+2024-06-12 13:23:28,026 - __main__ - ERROR - Error processing save for document_id 123: name 'get_ocument_stub' is not defined
+2024-06-12 13:23:28,027 - __main__ - INFO - save_document_worker Running
+2024-06-12 13:24:07,030 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
+2024-06-12 13:24:07,225 - werkzeug - INFO -  * Restarting with stat
+2024-06-12 13:24:08,103 - werkzeug - WARNING -  * Debugger is active!
+2024-06-12 13:24:08,104 - werkzeug - INFO -  * Debugger PIN: 924-627-618
+2024-06-12 13:24:08,134 - __main__ - INFO - save_document_worker START
+2024-06-12 13:24:08,134 - __main__ - INFO - save_document_worker Running
+2024-06-12 13:24:16,400 - __main__ - INFO - main thread finished save_document
+2024-06-12 13:24:16,400 - __main__ - INFO - Processing save for document_id 123
+2024-06-12 13:25:39,504 - __main__ - INFO - broadcast called.
+2024-06-12 13:25:39,508 - __main__ - ERROR - Error processing save for document_id 123: 'sid'
+2024-06-12 13:25:39,508 - __main__ - INFO - save_document_worker Running
+2024-06-12 13:26:27,133 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
+2024-06-12 13:26:27,472 - werkzeug - INFO -  * Restarting with stat
+2024-06-12 13:26:31,037 - werkzeug - WARNING -  * Debugger is active!
+2024-06-12 13:26:31,039 - werkzeug - INFO -  * Debugger PIN: 924-627-618
+2024-06-12 13:26:31,052 - __main__ - INFO - save_document_worker START
+2024-06-12 13:26:31,052 - __main__ - INFO - save_document_worker Running
+2024-06-12 13:27:01,876 - __main__ - INFO - main thread finished save_document
+2024-06-12 13:27:01,878 - __main__ - INFO - Processing save for document_id 123
+2024-06-12 13:27:59,041 - __main__ - ERROR - Error processing save for document_id 123: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Cancelling all calls"
+	debug_error_string = "UNKNOWN:Error received from peer ipv6:%5B::1%5D:50051 {created_time:"2024-06-12T13:27:59.0380094+00:00", grpc_status:14, grpc_message:"Cancelling all calls"}"
 >
-2024-06-12 02:59:43,658 - root - INFO - Received save request for document 123 with version v12
-2024-06-12 03:00:56,572 - root - INFO - RPC response: success=True, message=Document updated
-2024-06-12 03:00:56,572 - root - INFO - Broadcasting message for document 123
-2024-06-12 03:00:56,572 - __main__ - INFO - broadcast called.
-2024-06-12 03:04:27,173 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 03:04:27,367 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 03:07:48,254 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 03:07:48,967 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 03:07:48,970 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 03:07:52,182 - engineio.server - ERROR - http://127.0.0.1:4567 is not an accepted origin. (further occurrences of this error will be logged with level INFO)
-2024-06-12 03:08:17,423 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 03:08:17,588 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 03:08:18,394 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 03:08:18,397 - werkzeug - INFO -  * Debugger PIN: 924-627-618
-2024-06-12 03:15:43,279 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 03:15:50,529 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 03:15:50,530 - werkzeug - INFO -  * Debugger PIN: 984-606-042
-2024-06-12 03:17:23,282 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 03:17:24,125 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 03:17:24,126 - werkzeug - INFO -  * Debugger PIN: 984-606-042
-2024-06-12 03:21:31,856 - root - INFO - Received save request for document 2333 with version v5
-2024-06-12 03:22:58,838 - root - INFO - RPC response: success=True, message=Document updated
-2024-06-12 03:22:58,839 - root - INFO - Broadcasting message for document 2333
-2024-06-12 03:22:58,839 - __main__ - INFO - broadcast called.
-2024-06-12 03:25:31,731 - root - INFO - Received save request for document 2333 with version v6
-2024-06-12 03:26:34,936 - root - INFO - RPC response: success=True, message=Document updated
-2024-06-12 03:26:34,936 - root - INFO - Broadcasting message for document 2333
-2024-06-12 03:26:34,936 - __main__ - INFO - broadcast called.
-2024-06-12 03:28:04,514 - root - INFO - Received save request for document 2333 with version v7
-2024-06-12 03:29:00,418 - root - INFO - RPC response: success=True, message=Document updated
-2024-06-12 03:29:00,418 - root - INFO - Broadcasting message for document 2333
-2024-06-12 03:29:00,418 - __main__ - INFO - broadcast called.
-2024-06-12 03:29:36,506 - root - INFO - Received save request for document 2333 with version v8
-2024-06-12 03:30:36,857 - root - INFO - RPC response: success=True, message=Document updated
-2024-06-12 03:30:36,858 - root - INFO - Broadcasting message for document 2333
-2024-06-12 03:30:36,858 - __main__ - INFO - broadcast called.
-2024-06-12 03:31:04,243 - root - INFO - Received save request for document 2333 with version v9
-2024-06-12 03:32:18,011 - root - INFO - RPC response: success=True, message=Document updated
-2024-06-12 03:32:18,011 - root - INFO - Broadcasting message for document 2333
-2024-06-12 03:32:18,011 - __main__ - INFO - broadcast called.
-2024-06-12 03:32:38,604 - root - INFO - Received save request for document 2333 with version v10
-2024-06-12 03:33:34,267 - root - INFO - RPC response: success=True, message=Document updated
-2024-06-12 03:33:34,268 - root - INFO - Broadcasting message for document 2333
-2024-06-12 03:33:34,268 - __main__ - INFO - broadcast called.
-2024-06-12 03:34:16,075 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 03:34:16,349 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 03:34:17,650 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 03:34:17,653 - werkzeug - INFO -  * Debugger PIN: 984-606-042
-2024-06-12 03:35:31,030 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/flask_web.py', reloading
-2024-06-12 03:35:31,164 - werkzeug - INFO -  * Restarting with stat
-2024-06-12 03:35:32,042 - werkzeug - WARNING -  * Debugger is active!
-2024-06-12 03:35:32,043 - werkzeug - INFO -  * Debugger PIN: 984-606-042
-2024-06-12 03:35:43,835 - root - INFO - Received save request for document 2333 with version v11
-2024-06-12 03:36:52,527 - root - INFO - RPC response: success=True, message=Document updated
-2024-06-12 03:36:52,535 - root - INFO - Broadcasting message for document 2333
-2024-06-12 03:36:52,535 - __main__ - INFO - broadcast called.
+2024-06-12 13:27:59,042 - __main__ - INFO - save_document_worker Running
