@@ -37,12 +37,19 @@ message DeleteResponse {
     bool success = 1;
     string message = 2;
 }
+// 列表
+message ListResponse{
+    bool success = 1;
+    repeated string message = 2;
+}
+message Empty {}
 // Service定义
 service DocumentService {
     rpc ReadDocument(ReadRequest) returns (ReadResponse);
     rpc WriteDocument(WriteRequest) returns (WriteResponse);
     rpc CreateDocument(CreateRequest) returns (CreateResponse);
     rpc DeleteDocument(DeleteRequest) returns (DeleteResponse);
+    rpc ListDocuments(Empty) returns (ListResponse);
 }
 
 /* 

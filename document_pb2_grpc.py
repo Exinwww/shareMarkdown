@@ -35,6 +35,11 @@ class DocumentServiceStub(object):
                 request_serializer=document__pb2.DeleteRequest.SerializeToString,
                 response_deserializer=document__pb2.DeleteResponse.FromString,
                 )
+        self.ListDocuments = channel.unary_unary(
+                '/DocumentService/ListDocuments',
+                request_serializer=document__pb2.Empty.SerializeToString,
+                response_deserializer=document__pb2.ListResponse.FromString,
+                )
 
 
 class DocumentServiceServicer(object):
@@ -65,6 +70,12 @@ class DocumentServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def ListDocuments(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_DocumentServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -87,6 +98,11 @@ def add_DocumentServiceServicer_to_server(servicer, server):
                     servicer.DeleteDocument,
                     request_deserializer=document__pb2.DeleteRequest.FromString,
                     response_serializer=document__pb2.DeleteResponse.SerializeToString,
+            ),
+            'ListDocuments': grpc.unary_unary_rpc_method_handler(
+                    servicer.ListDocuments,
+                    request_deserializer=document__pb2.Empty.FromString,
+                    response_serializer=document__pb2.ListResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -164,5 +180,22 @@ class DocumentService(object):
         return grpc.experimental.unary_unary(request, target, '/DocumentService/DeleteDocument',
             document__pb2.DeleteRequest.SerializeToString,
             document__pb2.DeleteResponse.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def ListDocuments(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/DocumentService/ListDocuments',
+            document__pb2.Empty.SerializeToString,
+            document__pb2.ListResponse.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)

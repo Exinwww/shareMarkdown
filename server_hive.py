@@ -109,8 +109,6 @@ class DocumentServiceServicer(document_pb2_grpc.DocumentServiceServicer):
                         return document_pb2.WriteResponse(success=False, message="version mismatch or document not found")
                     
                     new_version = f"v{int(request.version[1:]) + 1}"
-                    # cursor.execute("UPDATE documents SET content = %s, version = %s WHERE document_id = %s", 
-                    #             (request.content, new_version, request.document_id))
                     exec_feedback = hop.update_document(cursor, request.content, new_version, request.document_id)
                     if exec_feedback:
                         conn.commit()
@@ -181,6 +179,23 @@ class DocumentServiceServicer(document_pb2_grpc.DocumentServiceServicer):
             else:
                 logger.info(f'Document {request.document_id} delete failed.')
                 return document_pb2.DeleteResponse(success=False, message='HIVE Error.')
+
+    def ListDocuments(self, request, context):
+        conn = self.get_hive_connection()
+        cursor = conn.cursor()
+        logger.info('Request to List Documents')
+        result = hop.list_documents(cursor)
+        if not result:
+            logger.info('HIVE ERROR')
+            context.set_details('HIVE ERROR')
+            context.set_code(grpc.StatusCode.ERROR)
+            return document_pb2.ListResponse(success=False, message='HIVE ERROR.')
+        else:
+            list_res = cursor.fetchall()
+            print(list_res)
+            list_res = [item[0] for item in list_res]
+            ############# 这里应该要看一下他的格式是什么样的？
+            return document_pb2.ListResponse(success=True, message=list_res)
 
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))

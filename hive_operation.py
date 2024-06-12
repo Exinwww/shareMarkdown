@@ -34,3 +34,13 @@ def create_document(cursor, did):
         return False
     finally:
         return True
+
+def list_documents(cursor):
+    """获取documents"""
+    try:
+        cursor.execute('SELECT document_id FROM documents')
+    except Exception as e:
+        print(e)
+        return False
+    finally:
+        return True

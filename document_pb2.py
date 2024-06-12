@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0e\x64ocument.proto\"\"\n\x0bReadRequest\x12\x13\n\x0b\x64ocument_id\x18\x01 \x01(\t\"0\n\x0cReadResponse\x12\x0f\n\x07\x63ontent\x18\x01 \x01(\t\x12\x0f\n\x07version\x18\x02 \x01(\t\"E\n\x0cWriteRequest\x12\x13\n\x0b\x64ocument_id\x18\x01 \x01(\t\x12\x0f\n\x07\x63ontent\x18\x02 \x01(\t\x12\x0f\n\x07version\x18\x03 \x01(\t\"1\n\rWriteResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x0f\n\x07message\x18\x02 \x01(\t\"$\n\rCreateRequest\x12\x13\n\x0b\x64ocument_id\x18\x01 \x01(\t\"2\n\x0e\x43reateResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x0f\n\x07message\x18\x02 \x01(\t\"$\n\rDeleteRequest\x12\x13\n\x0b\x64ocument_id\x18\x01 \x01(\t\"2\n\x0e\x44\x65leteResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x0f\n\x07message\x18\x02 \x01(\t2\xd4\x01\n\x0f\x44ocumentService\x12+\n\x0cReadDocument\x12\x0c.ReadRequest\x1a\r.ReadResponse\x12.\n\rWriteDocument\x12\r.WriteRequest\x1a\x0e.WriteResponse\x12\x31\n\x0e\x43reateDocument\x12\x0e.CreateRequest\x1a\x0f.CreateResponse\x12\x31\n\x0e\x44\x65leteDocument\x12\x0e.DeleteRequest\x1a\x0f.DeleteResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0e\x64ocument.proto\"\"\n\x0bReadRequest\x12\x13\n\x0b\x64ocument_id\x18\x01 \x01(\t\"0\n\x0cReadResponse\x12\x0f\n\x07\x63ontent\x18\x01 \x01(\t\x12\x0f\n\x07version\x18\x02 \x01(\t\"E\n\x0cWriteRequest\x12\x13\n\x0b\x64ocument_id\x18\x01 \x01(\t\x12\x0f\n\x07\x63ontent\x18\x02 \x01(\t\x12\x0f\n\x07version\x18\x03 \x01(\t\"1\n\rWriteResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x0f\n\x07message\x18\x02 \x01(\t\"$\n\rCreateRequest\x12\x13\n\x0b\x64ocument_id\x18\x01 \x01(\t\"2\n\x0e\x43reateResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x0f\n\x07message\x18\x02 \x01(\t\"$\n\rDeleteRequest\x12\x13\n\x0b\x64ocument_id\x18\x01 \x01(\t\"2\n\x0e\x44\x65leteResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x0f\n\x07message\x18\x02 \x01(\t\"0\n\x0cListResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x0f\n\x07message\x18\x02 \x03(\t\"\x07\n\x05\x45mpty2\xfc\x01\n\x0f\x44ocumentService\x12+\n\x0cReadDocument\x12\x0c.ReadRequest\x1a\r.ReadResponse\x12.\n\rWriteDocument\x12\r.WriteRequest\x1a\x0e.WriteResponse\x12\x31\n\x0e\x43reateDocument\x12\x0e.CreateRequest\x1a\x0f.CreateResponse\x12\x31\n\x0e\x44\x65leteDocument\x12\x0e.DeleteRequest\x1a\x0f.DeleteResponse\x12&\n\rListDocuments\x12\x06.Empty\x1a\r.ListResponseb\x06proto3')
 
 
 
@@ -26,6 +26,8 @@ _CREATEREQUEST = DESCRIPTOR.message_types_by_name['CreateRequest']
 _CREATERESPONSE = DESCRIPTOR.message_types_by_name['CreateResponse']
 _DELETEREQUEST = DESCRIPTOR.message_types_by_name['DeleteRequest']
 _DELETERESPONSE = DESCRIPTOR.message_types_by_name['DeleteResponse']
+_LISTRESPONSE = DESCRIPTOR.message_types_by_name['ListResponse']
+_EMPTY = DESCRIPTOR.message_types_by_name['Empty']
 ReadRequest = _reflection.GeneratedProtocolMessageType('ReadRequest', (_message.Message,), {
   'DESCRIPTOR' : _READREQUEST,
   '__module__' : 'document_pb2'
@@ -82,6 +84,20 @@ DeleteResponse = _reflection.GeneratedProtocolMessageType('DeleteResponse', (_me
   })
 _sym_db.RegisterMessage(DeleteResponse)
 
+ListResponse = _reflection.GeneratedProtocolMessageType('ListResponse', (_message.Message,), {
+  'DESCRIPTOR' : _LISTRESPONSE,
+  '__module__' : 'document_pb2'
+  # @@protoc_insertion_point(class_scope:ListResponse)
+  })
+_sym_db.RegisterMessage(ListResponse)
+
+Empty = _reflection.GeneratedProtocolMessageType('Empty', (_message.Message,), {
+  'DESCRIPTOR' : _EMPTY,
+  '__module__' : 'document_pb2'
+  # @@protoc_insertion_point(class_scope:Empty)
+  })
+_sym_db.RegisterMessage(Empty)
+
 _DOCUMENTSERVICE = DESCRIPTOR.services_by_name['DocumentService']
 if _descriptor._USE_C_DESCRIPTORS == False:
 
@@ -102,6 +118,10 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _DELETEREQUEST._serialized_end=352
   _DELETERESPONSE._serialized_start=354
   _DELETERESPONSE._serialized_end=404
-  _DOCUMENTSERVICE._serialized_start=407
-  _DOCUMENTSERVICE._serialized_end=619
+  _LISTRESPONSE._serialized_start=406
+  _LISTRESPONSE._serialized_end=454
+  _EMPTY._serialized_start=456
+  _EMPTY._serialized_end=463
+  _DOCUMENTSERVICE._serialized_start=466
+  _DOCUMENTSERVICE._serialized_end=718
 # @@protoc_insertion_point(module_scope)
