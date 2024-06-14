@@ -20,7 +20,7 @@ logging.basicConfig(
     level=logging.INFO,  # 设置日志级别
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # 日志格式
     handlers=[
-        logging.FileHandler("logs/app.log"),  # 将日志输出到文件
+        logging.FileHandler("logs/app_server.log"),  # 将日志输出到文件
         logging.StreamHandler()  # 将日志输出到控制台
     ]
 )
