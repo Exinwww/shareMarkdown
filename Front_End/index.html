@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Markdown Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Tool bar -->
+    <div class="tool">
+        <div id="file_name_shower" class="file_name">
+            <!-- <span>Untitled.md</span> -->
+             <div class="file_head"> File: </div>
+             <div class="file_text"> 
+                <select id="file_name_select" class="file_name_select" onchange="selectChange(this)">
+                    <option value="None">None</option>
+                </select>
+             </div>
+             <button id="flush" class="flush_button">Flush</button>
+             
+        </div>
+
+        <div class="buttons">
+            <button id="new" class="tool_button">new</button>
+            <button id="save" class="tool_button">save</button>
+            <button id="export" class="tool_button">export</button>
+        </div>
+    </div>
+    <!-- Editor and Preview -->
+    <div class="container">
+        <div class="editor" id="editor_div">
+            <textarea id="markdown-input" placeholder="在这里输入Markdown文本"></textarea>
+        </div>
+        <div class="preview" id="preview_div"></div>
+    </div>
+    
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+</body>
+</html>
