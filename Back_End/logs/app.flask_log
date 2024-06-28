@@ -1,0 +1,403 @@
+2024-06-25 02:34:06,983 - __main__ - INFO - save_document_worker START
+2024-06-25 02:34:06,983 - __main__ - INFO - save_document_worker Running
+2024-06-25 02:34:06,985 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 02:34:06,986 - __main__ - INFO - create_document_worker START
+2024-06-25 02:34:06,986 - __main__ - INFO - create_document_worker Running
+2024-06-25 02:34:07,631 - __main__ - INFO - save_document_worker START
+2024-06-25 02:34:07,632 - __main__ - INFO - save_document_worker Running
+2024-06-25 02:34:07,661 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 02:34:07,674 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 02:34:07,644 - __main__ - INFO - create_document_worker START
+2024-06-25 02:34:07,686 - __main__ - INFO - create_document_worker Running
+2024-06-25 02:34:27,170 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 02:34:27,254 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 02:34:27,669 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 02:34:27,673 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 02:34:27,684 - __main__ - INFO - save_document_worker START
+2024-06-25 02:34:27,685 - __main__ - INFO - save_document_worker Running
+2024-06-25 02:34:27,687 - __main__ - INFO - create_document_worker START
+2024-06-25 02:34:27,688 - __main__ - INFO - create_document_worker Running
+2024-06-25 02:34:42,016 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 02:34:42,105 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 02:34:42,537 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 02:34:42,541 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 02:34:42,553 - __main__ - INFO - create_document_worker START
+2024-06-25 02:34:42,553 - __main__ - INFO - create_document_worker Running
+2024-06-25 02:34:42,556 - __main__ - INFO - save_document_worker START
+2024-06-25 02:34:42,557 - __main__ - INFO - save_document_worker Running
+2024-06-25 02:35:21,142 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 02:35:21,163 - __main__ - INFO - create_document_worker START
+2024-06-25 02:35:21,164 - __main__ - INFO - create_document_worker Running
+2024-06-25 02:35:21,167 - __main__ - INFO - save_document_worker START
+2024-06-25 02:35:21,167 - __main__ - INFO - save_document_worker Running
+2024-06-25 02:35:21,655 - __main__ - INFO - save_document_worker START
+2024-06-25 02:35:21,655 - __main__ - INFO - save_document_worker Running
+2024-06-25 02:35:21,658 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 02:35:21,664 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 02:35:21,677 - __main__ - INFO - create_document_worker START
+2024-06-25 02:35:21,677 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:04:06,760 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:04:06,764 - __main__ - INFO - create_document_worker START
+2024-06-25 03:04:06,764 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:04:06,778 - __main__ - INFO - save_document_worker START
+2024-06-25 03:04:06,779 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:04:07,668 - __main__ - INFO - save_document_worker START
+2024-06-25 03:04:07,668 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:04:07,674 - __main__ - INFO - create_document_worker START
+2024-06-25 03:04:07,674 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:04:07,675 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:04:07,692 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:04:38,417 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:04:38,510 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:04:38,962 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:04:38,968 - __main__ - INFO - save_document_worker START
+2024-06-25 03:04:38,969 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:04:38,993 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:04:39,028 - __main__ - INFO - create_document_worker START
+2024-06-25 03:04:39,029 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:07:44,413 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:07:44,417 - __main__ - INFO - save_document_worker START
+2024-06-25 03:07:44,418 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:07:44,432 - __main__ - INFO - create_document_worker START
+2024-06-25 03:07:44,432 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:07:44,829 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:07:44,832 - __main__ - INFO - create_document_worker START
+2024-06-25 03:07:44,832 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:07:44,833 - __main__ - INFO - save_document_worker START
+2024-06-25 03:07:44,834 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:07:44,836 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:09:22,972 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:09:23,090 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:09:23,525 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:09:23,528 - __main__ - INFO - save_document_worker START
+2024-06-25 03:09:23,529 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:09:23,530 - __main__ - INFO - create_document_worker START
+2024-06-25 03:09:23,531 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:09:23,532 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:09:31,764 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:09:31,873 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:09:32,300 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:09:32,303 - __main__ - INFO - save_document_worker START
+2024-06-25 03:09:32,303 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:09:32,305 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:09:32,318 - __main__ - INFO - create_document_worker START
+2024-06-25 03:09:32,318 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:09:45,617 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:09:45,705 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:09:46,138 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:09:46,142 - __main__ - INFO - create_document_worker START
+2024-06-25 03:09:46,143 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:09:46,145 - __main__ - INFO - save_document_worker START
+2024-06-25 03:09:46,145 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:09:46,148 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:10:04,579 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:10:04,664 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:10:05,088 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:10:05,091 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:10:05,103 - __main__ - INFO - create_document_worker START
+2024-06-25 03:10:05,104 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:10:05,106 - __main__ - INFO - save_document_worker START
+2024-06-25 03:10:05,106 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:10:15,346 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:10:15,446 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:10:15,900 - __main__ - INFO - save_document_worker START
+2024-06-25 03:10:15,901 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:10:15,905 - __main__ - INFO - create_document_worker START
+2024-06-25 03:10:15,906 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:10:15,908 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:10:15,912 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:10:24,088 - __main__ - INFO - save_document_worker START
+2024-06-25 03:10:24,088 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:10:24,091 - __main__ - INFO - create_document_worker START
+2024-06-25 03:10:24,091 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:10:24,092 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:10:24,639 - __main__ - INFO - save_document_worker START
+2024-06-25 03:10:24,639 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:10:24,641 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:10:24,645 - __main__ - INFO - create_document_worker START
+2024-06-25 03:10:24,646 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:10:24,648 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:11:43,436 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:11:43,537 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:11:44,035 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:11:44,039 - __main__ - INFO - create_document_worker START
+2024-06-25 03:11:44,039 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:11:44,042 - __main__ - INFO - save_document_worker START
+2024-06-25 03:11:44,043 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:11:44,047 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:11:48,196 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:11:48,281 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:11:48,837 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:11:48,841 - __main__ - INFO - save_document_worker START
+2024-06-25 03:11:48,841 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:11:48,843 - __main__ - INFO - create_document_worker START
+2024-06-25 03:11:48,843 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:11:48,855 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:11:56,431 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:11:56,446 - __main__ - INFO - create_document_worker START
+2024-06-25 03:11:56,446 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:11:56,449 - __main__ - INFO - save_document_worker START
+2024-06-25 03:11:56,449 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:11:56,897 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:11:56,901 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:11:56,914 - __main__ - INFO - create_document_worker START
+2024-06-25 03:11:56,915 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:11:56,917 - __main__ - INFO - save_document_worker START
+2024-06-25 03:11:56,917 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:12:48,042 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:12:48,125 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:12:48,592 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:12:48,596 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:12:48,609 - __main__ - INFO - save_document_worker START
+2024-06-25 03:12:48,609 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:12:48,612 - __main__ - INFO - create_document_worker START
+2024-06-25 03:12:48,612 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:13:00,941 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:13:01,076 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:13:01,579 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:13:01,583 - __main__ - INFO - save_document_worker START
+2024-06-25 03:13:01,583 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:13:01,586 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:13:01,598 - __main__ - INFO - create_document_worker START
+2024-06-25 03:13:01,598 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:13:13,908 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:13:14,005 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:13:14,570 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:13:14,574 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:13:14,587 - __main__ - INFO - create_document_worker START
+2024-06-25 03:13:14,588 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:13:14,591 - __main__ - INFO - save_document_worker START
+2024-06-25 03:13:14,592 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:13:22,827 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:13:22,933 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:13:23,372 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:13:23,377 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:13:23,389 - __main__ - INFO - save_document_worker START
+2024-06-25 03:13:23,390 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:13:23,393 - __main__ - INFO - create_document_worker START
+2024-06-25 03:13:23,394 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:13:34,680 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:13:34,854 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:13:35,276 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:13:35,279 - __main__ - INFO - save_document_worker START
+2024-06-25 03:13:35,279 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:13:35,281 - __main__ - INFO - create_document_worker START
+2024-06-25 03:13:35,282 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:13:35,284 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:13:40,445 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:13:40,542 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:13:41,173 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:13:41,177 - __main__ - INFO - save_document_worker START
+2024-06-25 03:13:41,178 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:13:41,180 - __main__ - INFO - create_document_worker START
+2024-06-25 03:13:41,180 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:13:41,184 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:13:51,455 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:13:51,582 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:13:52,061 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:13:52,064 - __main__ - INFO - save_document_worker START
+2024-06-25 03:13:52,065 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:13:52,067 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:13:52,079 - __main__ - INFO - create_document_worker START
+2024-06-25 03:13:52,079 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:13:58,242 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:13:58,374 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:13:58,896 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:13:58,900 - __main__ - INFO - create_document_worker START
+2024-06-25 03:13:58,900 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:13:58,902 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:13:58,917 - __main__ - INFO - save_document_worker START
+2024-06-25 03:13:58,917 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:14:08,152 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:14:08,276 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:14:08,785 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:14:08,788 - __main__ - INFO - create_document_worker START
+2024-06-25 03:14:08,789 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:14:08,791 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:14:08,803 - __main__ - INFO - save_document_worker START
+2024-06-25 03:14:08,804 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:14:10,884 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:14:10,983 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:14:11,432 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:14:11,435 - __main__ - INFO - save_document_worker START
+2024-06-25 03:14:11,436 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:14:11,438 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:14:11,450 - __main__ - INFO - create_document_worker START
+2024-06-25 03:14:11,451 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:14:23,745 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:14:23,857 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:14:24,288 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:14:24,291 - __main__ - INFO - save_document_worker START
+2024-06-25 03:14:24,291 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:14:24,293 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:14:24,306 - __main__ - INFO - create_document_worker START
+2024-06-25 03:14:24,306 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:14:35,575 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:14:35,692 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:14:36,140 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:14:36,143 - __main__ - INFO - save_document_worker START
+2024-06-25 03:14:36,143 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:14:36,146 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:14:36,161 - __main__ - INFO - create_document_worker START
+2024-06-25 03:14:36,161 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:15:06,864 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:15:06,969 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:15:07,517 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:15:07,522 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:15:07,535 - __main__ - INFO - create_document_worker START
+2024-06-25 03:15:07,535 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:15:07,538 - __main__ - INFO - save_document_worker START
+2024-06-25 03:15:07,539 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:15:12,696 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:15:12,808 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:15:13,302 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:15:13,305 - __main__ - INFO - create_document_worker START
+2024-06-25 03:15:13,306 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:15:13,307 - __main__ - INFO - save_document_worker START
+2024-06-25 03:15:13,308 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:15:13,310 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:15:14,378 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:15:14,513 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:15:14,984 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:15:14,987 - __main__ - INFO - save_document_worker START
+2024-06-25 03:15:14,988 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:15:14,990 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:15:15,002 - __main__ - INFO - create_document_worker START
+2024-06-25 03:15:15,002 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:15:20,151 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:15:20,339 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:15:20,913 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:15:20,919 - __main__ - INFO - save_document_worker START
+2024-06-25 03:15:20,919 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:15:20,925 - __main__ - INFO - create_document_worker START
+2024-06-25 03:15:20,925 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:15:20,929 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:15:22,003 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:15:22,140 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:15:22,578 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:15:22,582 - __main__ - INFO - save_document_worker START
+2024-06-25 03:15:22,582 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:15:22,584 - __main__ - INFO - create_document_worker START
+2024-06-25 03:15:22,584 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:15:22,587 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:15:52,293 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:15:52,525 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:15:53,650 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:15:53,707 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:15:53,720 - __main__ - INFO - create_document_worker START
+2024-06-25 03:15:53,721 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:15:53,723 - __main__ - INFO - save_document_worker START
+2024-06-25 03:15:53,723 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:16:01,052 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:16:01,142 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:16:01,614 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:16:01,617 - __main__ - INFO - create_document_worker START
+2024-06-25 03:16:01,617 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:16:01,619 - __main__ - INFO - save_document_worker START
+2024-06-25 03:16:01,619 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:16:01,621 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:16:08,973 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:16:08,991 - __main__ - INFO - create_document_worker START
+2024-06-25 03:16:08,992 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:16:08,994 - __main__ - INFO - save_document_worker START
+2024-06-25 03:16:08,995 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:16:09,487 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:16:09,491 - __main__ - INFO - create_document_worker START
+2024-06-25 03:16:09,491 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:16:09,493 - __main__ - INFO - save_document_worker START
+2024-06-25 03:16:09,493 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:16:09,496 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:17:41,529 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:17:41,621 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:17:42,075 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:17:42,079 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:17:42,091 - __main__ - INFO - save_document_worker START
+2024-06-25 03:17:42,091 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:17:42,094 - __main__ - INFO - create_document_worker START
+2024-06-25 03:17:42,094 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:18:08,040 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:18:08,043 - __main__ - INFO - save_document_worker START
+2024-06-25 03:18:08,044 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:18:08,056 - __main__ - INFO - create_document_worker START
+2024-06-25 03:18:08,057 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:18:08,572 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:18:08,578 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:18:08,590 - __main__ - INFO - create_document_worker START
+2024-06-25 03:18:08,591 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:18:08,594 - __main__ - INFO - save_document_worker START
+2024-06-25 03:18:08,594 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:18:46,464 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:18:46,590 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:18:47,019 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:18:47,022 - __main__ - INFO - save_document_worker START
+2024-06-25 03:18:47,022 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:18:47,024 - __main__ - INFO - create_document_worker START
+2024-06-25 03:18:47,024 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:18:47,027 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:18:54,691 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:18:54,695 - __main__ - INFO - create_document_worker START
+2024-06-25 03:18:54,695 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:18:54,697 - __main__ - INFO - save_document_worker START
+2024-06-25 03:18:54,698 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:18:55,241 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:18:55,245 - __main__ - INFO - create_document_worker START
+2024-06-25 03:18:55,246 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:18:55,253 - __main__ - INFO - save_document_worker START
+2024-06-25 03:18:55,253 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:18:55,255 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:19:20,244 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:19:20,248 - __main__ - INFO - create_document_worker START
+2024-06-25 03:19:20,248 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:19:20,262 - __main__ - INFO - save_document_worker START
+2024-06-25 03:19:20,262 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:19:20,738 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:19:20,742 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:19:20,754 - __main__ - INFO - create_document_worker START
+2024-06-25 03:19:20,755 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:19:20,758 - __main__ - INFO - save_document_worker START
+2024-06-25 03:19:20,758 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:20:23,178 - werkzeug - INFO -  * Detected change in '/home/linbei/onlineWord/Back_End_v2/server_hive.py', reloading
+2024-06-25 03:20:23,272 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:20:23,741 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:20:23,744 - __main__ - INFO - save_document_worker START
+2024-06-25 03:20:23,745 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:20:23,748 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:20:23,760 - __main__ - INFO - create_document_worker START
+2024-06-25 03:20:23,760 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:20:27,386 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:20:27,389 - __main__ - INFO - save_document_worker START
+2024-06-25 03:20:27,390 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:20:27,402 - __main__ - INFO - create_document_worker START
+2024-06-25 03:20:27,403 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:20:27,888 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:20:27,893 - __main__ - INFO - create_document_worker START
+2024-06-25 03:20:27,893 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:20:27,895 - __main__ - INFO - save_document_worker START
+2024-06-25 03:20:27,895 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:20:27,898 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:20:59,592 - __main__ - INFO - broadcast called.
+2024-06-25 03:20:59,596 - __main__ - INFO - Processing save for document_id lll
+2024-06-25 03:20:59,618 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:24:07,742 - __main__ - INFO - broadcast called.
+2024-06-25 03:24:07,746 - __main__ - INFO - Processing save for document_id hahahah
+2024-06-25 03:24:07,768 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:24:14,014 - __main__ - INFO - broadcast called.
+2024-06-25 03:24:14,017 - __main__ - INFO - Processing save for document_id hahahah
+2024-06-25 03:24:14,026 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:26:37,013 - werkzeug - INFO -  * Restarting with stat
+2024-06-25 03:26:37,029 - __main__ - INFO - create_document_worker START
+2024-06-25 03:26:37,029 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:26:37,033 - __main__ - INFO - save_document_worker START
+2024-06-25 03:26:37,034 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:26:37,506 - werkzeug - WARNING -  * Debugger is active!
+2024-06-25 03:26:37,513 - __main__ - INFO - create_document_worker START
+2024-06-25 03:26:37,514 - __main__ - INFO - create_document_worker Running
+2024-06-25 03:26:37,517 - __main__ - INFO - save_document_worker START
+2024-06-25 03:26:37,517 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:26:37,521 - werkzeug - INFO -  * Debugger PIN: 135-146-533
+2024-06-25 03:52:57,389 - __main__ - INFO - broadcast called.
+2024-06-25 03:52:57,393 - __main__ - INFO - Processing save for document_id hahahah
+2024-06-25 03:52:57,416 - __main__ - INFO - save_document_worker Running
+2024-06-25 03:53:07,062 - __main__ - INFO - Processing create document_id dhaidhaoidha
+2024-06-25 03:53:07,077 - __main__ - INFO - create finished
+2024-06-25 03:53:07,077 - __main__ - INFO - create_document_worker Running

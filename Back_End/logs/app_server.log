@@ -1,0 +1,197 @@
+2024-06-25 02:34:43,468 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-25 02:34:43,521 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 02:34:43,908 - pyhive.hive - INFO - USE `default`
+2024-06-25 02:34:45,373 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 02:34:46,359 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 02:35:23,294 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-25 02:35:23,303 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 02:35:23,517 - pyhive.hive - INFO - USE `default`
+2024-06-25 02:35:23,699 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 02:35:23,909 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 02:35:54,614 - __main__ - INFO - Request to List Documents
+2024-06-25 02:35:54,616 - grpc._server - ERROR - Exception calling application: Error 111 connecting to localhost:6379. Connection refused.
+Traceback (most recent call last):
+  File "/home/linbei/.local/lib/python3.10/site-packages/redis/connection.py", line 276, in connect
+    sock = self.retry.call_with_retry(
+  File "/home/linbei/.local/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/home/linbei/.local/lib/python3.10/site-packages/redis/connection.py", line 277, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/home/linbei/.local/lib/python3.10/site-packages/redis/connection.py", line 639, in _connect
+    raise err
+  File "/home/linbei/.local/lib/python3.10/site-packages/redis/connection.py", line 627, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/linbei/.local/lib/python3.10/site-packages/grpc/_server.py", line 609, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/linbei/onlineWord/Back_End_v2/server_hive.py", line 269, in ListDocuments
+    keys = redis_client.keys('*')
+  File "/home/linbei/.local/lib/python3.10/site-packages/redis/commands/core.py", line 1973, in keys
+    return self.execute_command("KEYS", pattern, **kwargs)
+  File "/home/linbei/.local/lib/python3.10/site-packages/redis/client.py", line 542, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/linbei/.local/lib/python3.10/site-packages/redis/connection.py", line 1109, in get_connection
+    connection.connect()
+  File "/home/linbei/.local/lib/python3.10/site-packages/redis/connection.py", line 282, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+2024-06-25 03:04:03,892 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-25 03:04:03,901 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:04:04,133 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:04:04,264 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:04:04,465 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:04:21,880 - __main__ - INFO - Request to List Documents
+2024-06-25 03:04:21,882 - grpc._server - ERROR - Exception calling application: name 'list_res' is not defined
+Traceback (most recent call last):
+  File "/home/linbei/.local/lib/python3.10/site-packages/grpc/_server.py", line 609, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/linbei/onlineWord/Back_End_v2/server_hive.py", line 271, in ListDocuments
+    return document_pb2.ListResponse(success=True, message=list_res)
+NameError: name 'list_res' is not defined
+2024-06-25 03:04:43,812 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-25 03:04:43,820 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:04:43,972 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:04:44,127 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:04:44,314 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:04:50,077 - __main__ - INFO - Request to List Documents
+2024-06-25 03:10:26,862 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-25 03:10:26,870 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:10:27,120 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:10:27,225 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:10:27,407 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:10:27,410 - pyhive.hive - INFO - SELECT document_id, content, version FROM documents '
+2024-06-25 03:11:50,866 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-25 03:11:50,875 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:11:51,076 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:11:51,283 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:11:51,426 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:11:51,431 - pyhive.hive - INFO - SELECT * FROM documents
+2024-06-25 03:15:52,851 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-25 03:15:52,868 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:15:53,135 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:15:53,292 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:15:53,559 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:15:53,564 - pyhive.hive - INFO - SELECT * FROM documents
+2024-06-25 03:16:02,160 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-25 03:16:02,170 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:16:02,326 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:16:02,429 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:16:02,577 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:16:02,581 - pyhive.hive - INFO - SELECT * FROM documents
+2024-06-25 03:16:22,273 - __main__ - INFO - Request to List Documents
+2024-06-25 03:16:22,298 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:16:25,535 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:16:36,026 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:16:37,486 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:16:38,645 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:17:16,083 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:17:17,752 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:17:23,308 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:17:26,491 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:17:46,422 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-25 03:17:46,430 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:17:46,645 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:17:46,766 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:17:46,974 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:17:46,979 - pyhive.hive - INFO - SELECT * FROM documents
+2024-06-25 03:18:09,007 - __main__ - INFO - Request to List Documents
+2024-06-25 03:18:09,020 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:18:49,835 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-25 03:18:49,844 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:18:49,977 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:18:50,090 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:18:50,254 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:18:50,257 - pyhive.hive - INFO - SELECT * FROM documents
+2024-06-25 03:18:57,895 - __main__ - INFO - Request to List Documents
+2024-06-25 03:18:57,911 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:19:01,640 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:19:17,417 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-25 03:19:17,423 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:19:17,560 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:19:17,673 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:19:17,796 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:19:17,798 - pyhive.hive - INFO - SELECT * FROM documents
+2024-06-25 03:19:30,145 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-25 03:19:30,154 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:19:30,255 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:19:30,356 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:19:30,462 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:19:30,464 - pyhive.hive - INFO - SELECT * FROM documents
+2024-06-25 03:19:51,188 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-25 03:19:51,199 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:19:51,403 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:19:51,655 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:19:51,745 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:19:51,752 - pyhive.hive - INFO - SELECT * FROM documents
+2024-06-25 03:19:59,073 - __main__ - INFO - Request to List Documents
+2024-06-25 03:19:59,087 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:20:03,305 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:20:04,839 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:20:32,290 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-25 03:20:32,299 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:20:32,588 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:20:32,727 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:20:32,917 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:20:32,920 - pyhive.hive - INFO - SELECT * FROM documents
+2024-06-25 03:20:40,839 - kazoo.client - INFO - Connecting to localhost(127.0.0.1):2181, use_ssl: False
+2024-06-25 03:20:40,845 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:20:40,954 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:20:41,053 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:20:41,161 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:20:41,171 - pyhive.hive - INFO - SELECT * FROM documents
+2024-06-25 03:20:48,956 - __main__ - INFO - Request to List Documents
+2024-06-25 03:20:48,970 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:20:51,013 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:20:52,924 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:20:59,590 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:20:59,613 - __main__ - INFO - Request to WRITE Documents
+2024-06-25 03:20:59,616 - __main__ - INFO - WriteDocument OK. Has Been commit.
+2024-06-25 03:23:18,260 - __main__ - INFO - Request to List Documents
+2024-06-25 03:23:18,278 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:23:19,656 - __main__ - INFO - Request to List Documents
+2024-06-25 03:23:19,677 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:23:20,829 - __main__ - INFO - Request to List Documents
+2024-06-25 03:23:20,857 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:23:22,679 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:23:25,281 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:23:27,825 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:23:40,231 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:23:49,965 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:23:51,222 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:23:52,638 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:23:53,729 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:23:59,517 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:24:07,740 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:24:07,750 - __main__ - INFO - Request to WRITE Documents
+2024-06-25 03:24:07,766 - __main__ - INFO - WriteDocument OK. Has Been commit.
+2024-06-25 03:24:14,012 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:24:14,023 - __main__ - INFO - Request to WRITE Documents
+2024-06-25 03:24:14,024 - __main__ - INFO - WriteDocument OK. Has Been commit.
+2024-06-25 03:26:39,155 - kazoo.client - INFO - Connecting to localhost(::1):2181, use_ssl: False
+2024-06-25 03:26:39,167 - kazoo.client - INFO - Zookeeper connection established, state: CONNECTED
+2024-06-25 03:26:39,285 - pyhive.hive - INFO - USE `default`
+2024-06-25 03:26:39,388 - pyhive.hive - INFO - DESCRIBE documents
+2024-06-25 03:26:39,496 - __main__ - INFO - TABLE: documents is exit.
+2024-06-25 03:26:39,500 - pyhive.hive - INFO - SELECT * FROM documents
+2024-06-25 03:52:40,112 - __main__ - INFO - Request to List Documents
+2024-06-25 03:52:40,134 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:52:41,742 - __main__ - INFO - Request to List Documents
+2024-06-25 03:52:41,766 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:52:43,634 - __main__ - INFO - Request to List Documents
+2024-06-25 03:52:43,657 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:52:46,437 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:52:49,059 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:52:51,232 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:52:57,388 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:52:57,413 - __main__ - INFO - Request to WRITE Documents
+2024-06-25 03:52:57,415 - __main__ - INFO - WriteDocument OK. Has Been commit.
+2024-06-25 03:53:07,058 - __main__ - INFO - Request to List Documents
+2024-06-25 03:53:07,075 - __main__ - INFO - Request to CREATE Documents
+2024-06-25 03:53:08,605 - __main__ - INFO - Request to List Documents
+2024-06-25 03:53:08,620 - __main__ - INFO - Request to READ Documents
+2024-06-25 03:53:09,843 - __main__ - INFO - Request to List Documents
+2024-06-25 03:53:09,867 - __main__ - INFO - Request to READ Documents

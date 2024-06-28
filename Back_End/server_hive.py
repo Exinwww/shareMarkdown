@@ -8,13 +8,16 @@ import logging
 from kazoo.client import KazooClient, KazooState
 from kazoo.exceptions import LockTimeout
 import hive_operation as hop
+import redis
+from concurrent.futures import ThreadPoolExecutor
+import json
 
 # 分布式设置
 HIVE_HOST = 'localhost'
 HIVE_PORT = 10000
 HIVE_USERNAME = 'linbei'
 ZOOKEEPER_HOSTS = 'localhost:2181'
-
+redis_client = redis.Redis(host='localhost', port=6379, db=2)
 # 配置日志记录
 logging.basicConfig(
     level=logging.INFO,  # 设置日志级别
@@ -26,6 +29,34 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+def get_hive_connection():
+    """链接HIVE数据库"""
+    return hive.Connection(
+        host=HIVE_HOST, port=HIVE_PORT, username=HIVE_USERNAME
+    )
+def update_hive(key, value, op_type):
+    conn = self.get_hive_connection()
+    cursor = conn.cursor()
+     #定义锁的路径
+    lock_path = f"/locks/{key}"
+    # 创建锁对象
+    lock = self.zk.Lock(lock_path, "document_lock")
+    try:
+        if lock.acquire(timeout=10):
+            if op_type=='write':
+                content = value['content']
+                version = value['version']
+                hop.update_document(cursor, content, version, key)
+            elif op_type == 'delete':
+                hop.delete_document(cursor, key)
+            elif op_type == 'create':
+                hop.create_document(cursor, key)
+    # except LockTimeout:
+    #     # 锁超时
+    finally:
+        # 释放锁
+        lock.release()
+        
 # 需要检查数据库是否存在！！！！！！
 class DocumentServiceServicer(document_pb2_grpc.DocumentServiceServicer):
 
@@ -41,7 +72,9 @@ class DocumentServiceServicer(document_pb2_grpc.DocumentServiceServicer):
         """
         self.zk = KazooClient(hosts=ZOOKEEPER_HOSTS)
         self.zk.start()
-        conn = self.get_hive_connection()
+        # 创建线程池
+        self.executor = ThreadPoolExecutor(max_workers=5)
+        conn = get_hive_connection()
         cursor = conn.cursor()
         try: 
             cursor.execute("DESCRIBE documents")
@@ -58,144 +91,108 @@ class DocumentServiceServicer(document_pb2_grpc.DocumentServiceServicer):
                 logger.info("TABLE documents has been created.")
         finally:
             # 关闭游标和连接
+
+            op = f"SELECT * FROM documents"
+            cursor.execute(op)
+            results = cursor.fetchall()
+            for item in results:
+                did = item[2]
+                content = item[0]
+                version = item[1]
+                data = {
+                    'content': content,
+                    'version': version
+                }
+                redis_client.set(did, json.dumps(data))
+
             cursor.close()
             conn.close()
         
 
-    def get_hive_connection(self):
-        """链接HIVE数据库"""
-        return hive.Connection(
-            host=HIVE_HOST, port=HIVE_PORT, username=HIVE_USERNAME
-        )
+    
     
     def ReadDocument(self, request, context):
         """ 根据请求request，获取文档 """
-        conn = self.get_hive_connection()
-        cursor = conn.cursor()
-        logger.info(f"Request to ReadDocument: {request.document_id}")
-        op = f"SELECT content, version FROM documents WHERE document_id = '{request.document_id}'"
-        cursor.execute(op)
-        result = cursor.fetchone()
-        if result:
-            logger.info('Document Found')
-            content, version = result
-            return document_pb2.ReadResponse(content=content, version=version)
-        else:
+        logger.info('Request to READ Documents')
+        values = redis_client.get(request.document_id)
+        if not values: #没找到
             logger.info('Document NOT Found')
             context.set_details('Document not found')
             context.set_code(grpc.StatusCode.NOT_FOUND)
             return document_pb2.ReadResponse()
+        else: # 找到
+            values = json.loads(values)
+            content = values['content']
+            version = values['version']
+            return document_pb2.ReadResponse(content=content, version=version)
 
     def WriteDocument(self, request, context):
-        """根据请求，写入文档，使用zookeeper实现互斥"""
-        #定义锁的路径
-        lock_path = f"/locks/{request.document_id}"
-        # 创建锁对象
-        lock = self.zk.Lock(lock_path, "document_lock")
-
-        try:
-            # 尝试获取锁
-            if lock.acquire(timeout=10):
-                conn = self.get_hive_connection()
-                with conn.cursor() as cursor:
-                    logger.info(f'Request to WriteDocument: {request.document_id}')
-                    op = f"SELECT version FROM documents WHERE document_id = '{request.document_id}'"
-                    cursor.execute(op)
-                    current_version = cursor.fetchone()
-                    if not current_version or current_version[0] != request.version:
-                        context.set_details("version mismatch or document not found")
-                        logger.info(f'Current version = {current_version}, Found version = {request.version}')
-                        context.set_code(grpc.StatusCode.ABORTED)
-                        return document_pb2.WriteResponse(success=False, message="version mismatch or document not found")
-                    
-                    new_version = f"v{int(request.version[1:]) + 1}"
-                    exec_feedback = hop.update_document(cursor, request.content, new_version, request.document_id)
-                    if exec_feedback:
-                        conn.commit()
-                        logger.info('WriteDocument OK. Has Been commit.')
-                        return document_pb2.WriteResponse(success=True, message="Document updated")
-                    else:
-                        context.set_details("SQL update ERROR")
-                        context.set_code(grpc.StatusCode.ABORTED)
-                        logger.info('WriteDocument Failed. SQL ERROR. To rollback.')
-                        conn.rollback()
-                        return document_pb2.WriteResponse(success=false, message="SQL update ERROR")
-            else:
-                context.set_details("Could not acquire lock")
-                context.set_code(grpc.StatusCode.ABORTED)
-                logger.info('Could not acquire lock')
-                return document_pb2.WriteResponse(success=False, message="Could not acquie lock")
-
-        except LockTimeout:
-            # 锁超时
-            context.set_details("Lock acquisition timed out")
+        logger.info('Request to WRITE Documents')
+        values = redis_client.get(request.document_id)
+        if not values:
+            context.set_details("version mismatch or document not found")
+            logger.info(f'Current version = {current_version}, Found version = {request.version}')
             context.set_code(grpc.StatusCode.ABORTED)
-            logger.info('Lock acquisition timed out')
-            return document_pb2.WriteResponse(success=False, message="Lock acquisition timed out")
-        finally:
-            # 释放锁
-            lock.release()
+            return document_pb2.WriteResponse(success=False, message="version mismatch or document not found")
+        values = json.loads(values)
+        if values['version'] != request.version:
+            context.set_details("version mismatch or document not found")
+            logger.info(f'Current version = {current_version}, Found version = {request.version}')
+            context.set_code(grpc.StatusCode.ABORTED)
+            return document_pb2.WriteResponse(success=False, message="version mismatch or document not found")
+
+        new_version = f"v{int(request.version[1:]) + 1}"
+        write_data = {
+            'version':new_version,
+            'content':request.content
+        }
+        redis_client.set(request.document_id, json.dumps(write_data))
+        self.executor.submit(update_hive, request.document_id, write_data, 'write')
+
+        logger.info('WriteDocument OK. Has Been commit.')
+        return document_pb2.WriteResponse(success=True, message="Document updated")
 
     def CreateDocument(self, request, context):
         """ 根据请求request，创建文档"""
-        conn = self.get_hive_connection()
-        cursor = conn.cursor()
-        logger.info(f"Request to ReadDocument: {request.document_id}")
-        cursor.execute(f"SELECT content, version FROM documents WHERE document_id = '{request.document_id}'")
-        search_res = cursor.fetchone()
-        if search_res:
+        logger.info('Request to CREATE Documents')
+        values = redis_client.get(request.document_id)
+        if values: # 找到
+            values = json.loads(values)
             logger.info(f'Document {request.document_id} Exit.')
             context.set_details('Document Exist, cannot create.')
             context.set_code(grpc.StatusCode.ABORTED)
             return document_pb2.CreateResponse(success=False, message='Document Exist.')
         else:
-            logger.info(f'Document {request.document_id} not exist, can create.')
-            create_res = hop.create_document(cursor, request.document_id)
-            if create_res:
-                logger.info(f'Document {request.document_id} create successfully.')
-                return document_pb2.CreateResponse(success=True, message='Document Created.')
-            else:
-                logger.info(f'Document {request.document_id} create failed.')
-                return document_pb2.CreateResponse(success=False, message='HIVE Error.')
+            create_data = {
+                'version':'v0',
+                'content': ''
+            }
+            redis_client.set(request.document_id, json.dumps(create_data))
+            self.executor.submit(update_hive, request.document_id, create_data, 'create')
+            return document_pb2.CreateResponse(success=True, message='Document Created.')
 
     def DeleteDocument(self, request, context):
         """根据请求request，删除文档"""
-        conn = self.get_hive_connection()
-        cursor = conn.cursor()
-        logger.info(f"Request to ReadDocument: {request.document_id}")
-        cursor.execute(f"SELECT content, version FROM documents WHERE document_id = '{request.document_id}'")
-        search_res = cursor.fetchone()
-        if not search_res:
+        logger.info('Request to DELETE Documents')
+        values = redis_client.get(request.document_id)
+        if not values: # 没找到
             logger.info(f'Document {request.document_id} no Exist')
             context.set_details('Document not Exist, cannot delete.')
             context.set_code(grpc.StatusCode.ABORTED)
             return document_pb2.DeleteResponse(success=False, message='Document not Exist.')
-        else:
-            logger.info(f'Document {request.document_id} exist, can delete.')
-            delete_res = hop.delete_document(cursor, request.document_id)
-            if delete_res:
-                logger.info(f'Document {request.document_id} delete successfully.')
-                return document_pb2.DeleteResponse(success=True, message='Document Delete.')
-            else:
-                logger.info(f'Document {request.document_id} delete failed.')
-                return document_pb2.DeleteResponse(success=False, message='HIVE Error.')
+        else: # 找到
+            values = json.loads(values)
+            redis_client.delete(request.document_id)
+            self.executor.submit(update_hive, request.document_id, '', 'delete')
+            return document_pb2.DeleteResponse(success=True, message='Document Delete.') 
 
     def ListDocuments(self, request, context):
-        conn = self.get_hive_connection()
-        cursor = conn.cursor()
         logger.info('Request to List Documents')
-        result = hop.list_documents(cursor)
-        if not result:
-            logger.info('HIVE ERROR')
-            context.set_details('HIVE ERROR')
-            context.set_code(grpc.StatusCode.ERROR)
-            return document_pb2.ListResponse(success=False, message='HIVE ERROR.')
-        else:
-            list_res = cursor.fetchall()
-            print(list_res)
-            list_res = [item[0] for item in list_res]
-            ############# 这里应该要看一下他的格式是什么样的？
-            return document_pb2.ListResponse(success=True, message=list_res)
+        keys = redis_client.keys('*')
+        keys = [key for key in keys]
+        print(keys)
+        return document_pb2.ListResponse(success=True, message=keys)
+
 
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
